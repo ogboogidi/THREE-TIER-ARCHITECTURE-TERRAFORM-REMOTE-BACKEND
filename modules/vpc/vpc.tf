@@ -98,7 +98,7 @@ resource "aws_subnet" "apci_backend_subnet_04_AZ2b" {
    vpc_id = aws_vpc.apci-s3-reader-app-main-vpc.id
    cidr_block = var.database_cidr_block[0]
    availability_zone = var.availability_zone[0]
-   map_customer_owned_ip_on_launch = false
+   map_public_ip_on_launch = false
 
 
    tags = merge(var.tags,
@@ -113,7 +113,7 @@ resource "aws_subnet" "apci_backend_subnet_04_AZ2b" {
    vpc_id = aws_vpc.apci-s3-reader-app-main-vpc.id
    cidr_block = var.database_cidr_block[1]
    availability_zone = var.availability_zone[1]
-   map_customer_owned_ip_on_launch = false
+   map_public_ip_on_launch = false
 
 
    tags = merge(var.tags,

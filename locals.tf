@@ -2,9 +2,12 @@
 
 locals {
   apci_tags = {
-    project = "firestone"
+    project     = "firestone"
     application = "apci_s3_reader"
     environment = "dev"
-    owner = "ogboogidi"
+    owner       = "ogboogidi"
   }
 }
+
+
+

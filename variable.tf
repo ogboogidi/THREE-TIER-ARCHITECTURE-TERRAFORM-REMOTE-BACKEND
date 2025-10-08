@@ -1,13 +1,7 @@
-variable "vpc_id" {
-  type = string
-}
+
 
 variable "vpc_cidr_block" {
   type = string
-}
-
-variable "tags" {
-  type = map(string)
 }
 
 variable "frontend_subnet_cidr_block" {
@@ -24,4 +18,9 @@ variable "apci_backend_cidr_block" {
 
 variable "database_cidr_block" {
   type = list(string)
+}
+
+
+variable "domain" {
+  type = string
 }
